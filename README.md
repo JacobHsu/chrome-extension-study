@@ -3,6 +3,7 @@
 [Sample Extensions](https://developer.chrome.com/extensions/samples)
 
 My Bookmarks
+notifications
 Drink Water Event Popup
 
 ## sources
