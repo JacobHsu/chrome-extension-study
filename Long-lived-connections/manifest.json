@@ -1,0 +1,16 @@
+{
+    "manifest_version" : 2,
+    "name" : "Long-lived connections",
+    "description" : "https://developer.chrome.com/apps/messaging",
+    "version" : "2.0",
+    "browser_action": {
+        "default_title": "長時間溝通範例",
+        "default_popup": "popup.html"
+    },    
+    "background" : {
+        "scripts" : ["event.js"],
+        "persistent" : false,
+        "default_popup": "popup.html"
+    },   
+    "permissions" : ["tabs"]
+}
