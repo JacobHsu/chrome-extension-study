@@ -8,7 +8,11 @@ Drink Water Event Popup
 
 ## sources
 
-[iconfinder](https://www.iconfinder.com/) 
+[iconfinder](https://www.iconfinder.com/)
+
+## crxdo
+
+[externally_connectable](https://crxdoc-zh.appspot.com/apps/manifest/externally_connectable)
 
 ## doc
 
