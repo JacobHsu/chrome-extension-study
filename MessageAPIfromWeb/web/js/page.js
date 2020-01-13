@@ -10,7 +10,7 @@ dButton.addEventListener('click', function(e) {
 
     chrome.runtime.sendMessage(
         extensionID, 
-        { name: "切換頁面按鈕", in: inputVal },
+        { name: "切換頁面按鈕", in: inputVal, key: "onetime", val: 'val' },
         function(response) {
             console.log(response); // "來自擴充功能的訊息：操作完成"
         });

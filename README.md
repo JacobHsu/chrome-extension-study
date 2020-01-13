@@ -4,7 +4,8 @@
 
 My Bookmarks
 notifications
-Drink Water Event Popup
+Drink Water Event Popup  
+Chrome Query (chrome.devtools.panels)  
 
 ## sources
 
@@ -16,6 +17,7 @@ Drink Water Event Popup
 
 ## doc
 
+[chrome.devtools.panels](https://developer.chrome.com/extensions/devtools_panels)
 [Message Passing](https://developer.chrome.com/apps/messaging)  
 [Chrome Extension 開發與實作 13-腳本組件之間訊息的傳遞(上)](https://ithelp.ithome.com.tw/articles/10187744)  
 
@@ -24,3 +26,4 @@ Drink Water Event Popup
 
 [[Chrome] Message Passing API](https://pjchender.github.io/2019/05/21/chrome-message-passing-api/)
 [[Chrome] Chrome Extension API 筆記](https://pjchender.github.io/2019/05/08/chrome-chrome-extension-api-%E7%AD%86%E8%A8%98/)
+

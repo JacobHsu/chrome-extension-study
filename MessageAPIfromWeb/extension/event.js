@@ -3,15 +3,19 @@ var toggle = false;
 var blockList = [];
 
 chrome.runtime.onMessageExternal.addListener(function(message, sender, sendResponse) {
-    console.log(sender);
+    //console.log('[event.js] sender', sender);
 
     //如果訪問在黑名單，就不作任何動作
     if (blockList.indexOf(sender.url) != -1) {
         return;
     }
 
-    if (message.name != "切換頁面按鈕") {
-        return;
+    if (message.key === "onetime") {
+        console.log("[event.js] onetime msg", message)
+        // chrome.runtime.sendMessage({ content: "event.js發送給content.js" }, function(response) {
+        //     console.log(response);
+        // });
+        // return;
     }
 
     // 長時間訊息的接受 runtime.onConnect
@@ -33,18 +37,18 @@ chrome.runtime.onMessageExternal.addListener(function(message, sender, sendRespo
       });
 
     //如果按鈕是啟用的狀態則開，否則關
-    if (!toggle) {
-        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-            chrome.pageAction.show(tabs[0].id);
-            toggle = !toggle;
-        });
-    } else {
-        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-            chrome.pageAction.hide(tabs[0].id);
-            toggle = !toggle;
+    // if (!toggle) {
+    //     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    //         chrome.pageAction.show(tabs[0].id);
+    //         toggle = !toggle;
+    //     });
+    // } else {
+    //     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    //         chrome.pageAction.hide(tabs[0].id);
+    //         toggle = !toggle;
 
-        });
-    }
+    //     });
+    // }
 
     sendResponse("來自擴充功能的訊息：操作完成");
 
